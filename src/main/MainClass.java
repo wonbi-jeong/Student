@@ -20,8 +20,8 @@ public class MainClass {
 		System.out.println("4.학생정보수정");
 		System.out.println("5.학생정보모두출력");
 		
-		System.out.println("5.학생정보저장");
-		System.out.println("6.학생정보불러오기");
+		System.out.println("6.학생정보저장");
+		System.out.println("7.학생정보불러오기");
 
 		System.out.print("메뉴의 번호 >> ");
 		int menuNumber = sc.nextInt();
@@ -43,8 +43,11 @@ public class MainClass {
 				dao.allData();
 				break;
 			case 6:
-	
+				dao.save();
 				break;
+			case 7:
+				dao.load();
+				break;	
 			}
 		}
 	}
