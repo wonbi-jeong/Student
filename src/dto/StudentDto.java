@@ -89,8 +89,10 @@ public class StudentDto { // 학생 수만큼 생성
 	// source - generate toString => 바로 생성
 	@Override
 	public String toString() {
-		return "StudentDto [name=" + name + ", age=" + age + ", height=" + height + ", address=" + address + " , kor="
-				+ kor + ", eng=" + eng + ", math=" + math + "]";
+//		return "StudentDto [name=" + name + ", age=" + age + ", height=" + height + ", address=" + address + " , kor="
+//				+ kor + ", eng=" + eng + ", math=" + math + "]";
+		return name + "-" + age + "-" + height + "-" + address + "-"
+		+ kor + "-" + eng + "-" + math;
 	}
 	
 	public void print() {
